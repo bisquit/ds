@@ -1,0 +1,495 @@
+/* line 17, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../scss/style.scss */
+body {
+  min-width: 1000px;
+  font-family: "khmer UI";
+  font-weight: 700;
+}
+
+/* line 14, ../scss/style.scss */
+header {
+  width: 100%;
+  min-width: 1000px;
+  height: 100px;
+}
+/* line 19, ../scss/style.scss */
+header div#title {
+  width: 300px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+/* line 25, ../scss/style.scss */
+header div#title span#logo {
+  display: inline-block;
+  width: 76px;
+  height: 66px;
+  background-image: url("../../images/logo.png");
+}
+/* line 32, ../scss/style.scss */
+header div#title h1 {
+  display: inline-block;
+  vertical-align: super;
+  font-size: 30px;
+}
+/* line 38, ../scss/style.scss */
+header div#title a {
+  display: block;
+  padding-left: 120px;
+  margin-left: -80px;
+  padding-top: 50px;
+  margin-top: -50px;
+  text-decoration: none;
+  color: black;
+  text-indent: 100%;
+  overflow: hidden;
+  background-image: url("../../images/title.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+/* line 54, ../scss/style.scss */
+header div#help_nav {
+  float: right;
+  margin-top: 24px;
+}
+/* line 58, ../scss/style.scss */
+header div#help_nav ul {
+  width: 380px;
+  height: 52px;
+  list-style-type: none;
+}
+/* line 63, ../scss/style.scss */
+header div#help_nav ul li {
+  display: inline-block;
+  width: 180px;
+  height: 52px;
+  background-image: url("../../images/btn_help_normal.png");
+  background-repeat: no-repeat;
+}
+/* line 70, ../scss/style.scss */
+header div#help_nav ul li a, header div#help_nav ul li a:link, header div#help_nav ul li a:visited {
+  display: block;
+  line-height: 52px;
+  padding-left: 56px;
+  text-decoration: none;
+  color: black;
+}
+/* line 78, ../scss/style.scss */
+header div#help_nav ul li a:hover, header div#help_nav ul li a:active {
+  display: block;
+  line-height: 52px;
+  padding-left: 56px;
+  text_decoration: none;
+  color: #4d3d3d;
+}
+
+/* line 90, ../scss/style.scss */
+section#content {
+  width: 100%;
+  min-width: 1000px;
+  min-height: 810px;
+  background-image: url("../../images/bg_main.png");
+  background-size: cover;
+}
+/* line 97, ../scss/style.scss */
+section#content div#main_nav {
+  position: relative;
+}
+/* line 100, ../scss/style.scss */
+section#content div#main_nav ul {
+  list-style-type: none;
+  width: 650px;
+  margin: 0 auto;
+}
+/* line 105, ../scss/style.scss */
+section#content div#main_nav ul li {
+  display: inline-block;
+  width: 200px;
+  height: 74px;
+  margin-left: 10px;
+  text-align: center;
+}
+/* line 114, ../scss/style.scss */
+section#content div#main_nav ul li a {
+  display: block;
+  overflow: hidden;
+  line-height: 74px;
+  text-decoration: none;
+  color: black;
+  background: url("../../images/menuBtn.png") no-repeat;
+  background-position: 0 0;
+}
+/* line 124, ../scss/style.scss */
+section#content div#main_nav ul li a:hover {
+  background-position: 0 -73px;
+}
+/* line 128, ../scss/style.scss */
+section#content div#main_nav ul li a:active {
+  background-position: 0 -72px;
+}
+/* line 132, ../scss/style.scss */
+section#content div#main_nav ul li a.selected {
+  background-position: 0 -148px;
+}
+
+
+/* line 138, ../scss/style.scss */
+section#content div#main_nav span#btn_back {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  background-image: url("../../images/btn_back.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 150, ../scss/style.scss */
+section#content div#main_nav span#btn_back:hover {
+  left: -5px;
+}
+
+/*MY SCORE*/
+/* line 158, ../scss/style.scss */
+div#section_myScore {
+  position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+}
+/* line 163, ../scss/style.scss */
+div#section_myScore div#section_library {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  min-width: 900px;
+  text-align: center;
+}
+/* line 170, ../scss/style.scss */
+div#section_myScore div#section_library span#btn_addScore {
+  display: block;
+  width: 142px;
+  height: 142px;
+  margin: 0 auto;
+  color: rgba(87, 32, 32, 0);
+  font-size: 18px;
+  text-align: center;
+  line-height: 290px;
+  background-image: url("../../images/btn_add.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 184, ../scss/style.scss */
+div#section_myScore div#section_library span#btn_addScore:hover {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  color: #572020;
+}
+/* line 191, ../scss/style.scss */
+div#section_myScore div#section_edit {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 198, ../scss/style.scss */
+div#section_myScore div#section_edit div#sliderArea {
+  display: block;
+  width: 150px;
+  height: 80px;
+  margin-left: 40px;
+  color: #ff7d1a;
+}
+/* line 206, ../scss/style.scss */
+div#section_myScore div#section_edit label {
+  cursor: pointer;
+}
+/* line 210, ../scss/style.scss */
+div#section_myScore div#section_edit input#scoreTitle {
+  display: block;
+  width: 130px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "khmer UI";
+  font-size: 20px;
+  text-indent: 5px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 225, ../scss/style.scss */
+div#section_myScore div#section_edit input#scoreTitle:focus {
+  color: rgba(0, 0, 0, 0.8);
+  width: 220px;
+}
+/* line 231, ../scss/style.scss */
+div#section_myScore div#section_edit input#bpmNumber {
+  color: #ff7d1a;
+  font-family: "khmer UI";
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* line 243, ../scss/style.scss */
+div#section_myScore div#section_edit span#btn_play {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 122px;
+  height: 48px;
+  background-image: url("../../images/playAndPauseBtn.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+/* line 256, ../scss/style.scss */
+div#section_myScore div#section_edit #btn_play.playing {
+  background-position: 0 -54px;
+}
+/* line 260, ../scss/style.scss */
+div#section_myScore div#section_edit span#btn_stop {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 74%;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../images/btn_stop.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* line 272, ../scss/style.scss */
+div#section_myScore div#section_edit div#snipet {
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 125px;
+  height: 250px;
+  background: white;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+}
+/* line 283, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1000px;
+  background-color: black;
+  border: 2px solid #ff7d1a;
+  z-index: 100;
+}
+/* line 294, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container span#btn_record {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  display: block;
+  width: 134px;
+  height: 134px;
+  background-image: url("../../images/btn_record.png");
+  background-repeat: no-repeat;
+}
+/* line 305, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset {
+  position: relative;
+  bottom: 0;
+  width: 600px;
+  height: 250px;
+  margin: 0 auto;
+}
+/* line 312, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset .draggable {
+  position: absolute;
+  text-align: center;
+  line-height: 60px;
+}
+/* line 317, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #bass_drum {
+  display: block;
+  width: 100px;
+  height: 111px;
+  left: 240px;
+  top: 120px;
+  background-image: url("../../images/drum_bass.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 327, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset .drum {
+  display: block;
+  background-image: url("../../images/drum_circle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 333, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #floor_drum {
+  width: 120px;
+  height: 120px;
+  left: 323px;
+  top: 126px;
+}
+/* line 339, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #low_tum {
+  width: 70px;
+  height: 70px;
+  left: 289px;
+  top: 58px;
+}
+/* line 345, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #high_tum {
+  width: 80px;
+  height: 80px;
+  left: 215px;
+  top: 53px;
+}
+/* line 351, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #snear_drum {
+  width: 100px;
+  height: 100px;
+  left: 153px;
+  top: 120px;
+}
+/* line 357, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #high_hut {
+  width: 130px;
+  height: 130px;
+  left: 75px;
+  top: 47px;
+}
+/* line 363, ../scss/style.scss */
+div#section_myScore div#section_edit div#drumset_container div#drumset #simbul {
+  width: 150px;
+  height: 150px;
+  left: 362px;
+  top: -2px;
+}
+/* line 372, ../scss/style.scss */
+div#section_myScore div#section_edit div#canvasArea {
+  position: relative;
+  text-align: center;
+}
+/* line 377, ../scss/style.scss */
+div#section_myScore div#section_edit div.option_area {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  text-align: right;
+}
+/* line 384, ../scss/style.scss */
+div#section_myScore div#section_edit span.btn_addAScore, div#section_myScore div#section_edit span.btn_removeAScore {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* line 391, ../scss/style.scss */
+div#section_myScore div#section_edit span.btn_addAScore:hover, div#section_myScore div#section_edit span.btn_removeAScore:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -o-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+/* line 396, ../scss/style.scss */
+div#section_myScore div#section_edit span.btn_addAScore {
+  background-image: url("../../images/btn_score_add.png");
+}
+/* line 400, ../scss/style.scss */
+div#section_myScore div#section_edit span.btn_removeAScore {
+  background-image: url("../../images/btn_score_remove.png");
+  background-position: 0 50%;
+  margin-bottom: 25px;
+}

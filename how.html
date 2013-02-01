@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>drumscore</title>
+  <meta name="description" content="ドラマーのためのスコア作成サイト">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/output/style.css">
+  <style>
+  #sample_view{
+      width: 85%;
+      margin: 20px auto;
+      font-family: "ヒラギノ角ゴ Pro W3",'メイリオ',Meiryo,sans-serif;
+  }
+  .sample_art{
+      margin-bottom: -50px;
+      padding-bottom: 90px;
+  }
+  figure img{
+      width: 85%;
+      margin: 10px auto;
+      border: 2px white dashed;
+      border-radius: 3px;
+  }
+  </style>
+  <!-- modernizr -->
+  <script src="js/libs/modernizr.custom.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+    <div id="title">
+        <span id="logo"></span>
+        <h1><a href="index.html">drumScore</a></h1>
+    </div>
+    <div id="help_nav">
+        <ul>
+            <li><a href="how.html" id="a_how">How To Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+  </header>
+  <section id="content">
+    <div id="main_nav">
+        <ul>
+            <li><a href="index.html" id="a_my_scores">MY SCORES</a></li>
+            <li><a href="#">SHERING</a></li>
+            <li><a href="#">GO LISTENING</a></li>
+        </ul>
+    </div>
+    <!--Sample-->
+    <div id="sample_view">
+        <article class="sample_art">
+            <figcaption>*Home View</figcaption>
+            <figure><img src="images/docs/sample_home.png"></figure>
+            
+            <p>
+                １：作成したスコアの一覧<br>
+                ２：マウスをしばらく乗せると "Delete?" の表示がでます｜
+                   "Delete?" をクリックするとスコアを削除できます<br>
+                ３：新規スコアを作成します
+            </p>
+        </article>
+        
+        <article class="sample_art">
+            <figcaption>*Edit View</figcaption>
+            <figure><img src="images/docs/sample_edit.png"></figure>
+            
+            <p>
+                １：スコアのタイトル｜クリックで編集<br>
+                ２：再生テンポ｜変更する場合は数値をクリック<br>
+                ３：編集するスコア｜詳細は以下の通り<br>
+                <pre>
+        
+        音符の追加：空白の譜面上でクリック
+        音符の削除：音符をダブルクリック
+        音符の移動：音符をドラッグ＆ドロップ
+        
+        ＊譜面は上から
+             シンバル or ライドシンバル（◇）
+             ハイハット（×）
+             タム・スネア・フロア・バス（●）
+             フットハイハット（×）
+             になっています
+        　
+        　８分線に近づくとスナップされます
+        　アイコンは自動で切り替わります
+                </pre>
+                ４：再生ヘッドを動かし、デモ演奏を行います<br>
+                ５：譜面を追加・削除します<br>
+                ６：７のRecordボタンを押した後 好きなところを叩いてください<br>
+                ＊ドラッグで動かせるので好きな配置にどうぞ<br>
+                ７：１秒後に再生ヘッドが動き始めます 好きなタイミングでドラムセットを叩いてください
+            </p>
+        </article>
+    </div>
+  </section>
+
+  <script></script>
+  <!-- js libraries -->
+  <script src="js/libs/dojo/dojo.js" data-dojo-config="async:true"></script>
+  <script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
+  <!-- user script -->
+  
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <!--<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>-->
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>drumscore</title>
+  <meta name="description" content="ドラマーのためのスコア作成サイト">
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/output/style.css">
+  <link rel="stylesheet" href="css/output/form.css">
+  <!-- modernizr -->
+  <script src="js/libs/modernizr.custom.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+</head>
+<body>
+<header>
+    <div id="title">
+        <span id="logo"></span>
+        <h1><a href="index.html">drumScore</a></h1>
+    </div>
+    <div id="help_nav">
+        <ul>
+            <li><a href="how.html" id="a_how">How To Use</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+  </header>
+  <section id="content">
+    <div id="main_nav">
+        <ul>
+            <li><a href="index.html" id="a_my_scores">MY SCORES</a></li>
+            <li><a href="#">SHERING</a></li>
+            <li><a href="#">GO LISTENING</a></li>
+        </ul>
+    </div>
+    
+    <!--form-->
+    <div class="wrap">
+    <div class="success">
+    <h2>Thank you for signing up!</h2>
+    <p>登録確認メールを送信しました</p>
+    <p><a class="close" href="index.html">Continue</a></p>
+    </div>
+    
+    <h1>Won't you sign up for drumScore?</h1>
+    <p>サインインすると保存したスコアをどこからでも見ることが出来ます</p>
+    <div id="warning">入力欄に誤りがあります</div>
+    <form id="myForm" action="javascript:void;">
+        <fieldset>
+            <label>ユーザ名 : <input type="text" name="firstname" id="first"><span class="count"></span></label>
+            <div class="error" id="first_error">ユーザ名が記入されていません</div><br>
+            <label>Email : <input type="email" name="username" id="un"><span class="count"></span></label><div class="error" id="un_error">アドレスが記入されていません</div><br>
+            <label>パスワード : <input type="password" name="password" id="pass"><span class="level"></span></label><div class="error" id="pass_error">パスワードが設定されていません</div><br>
+        </fieldset>
+        <input type="submit" value="Sign up" id="submit">
+    </form>
+    <p class="subtext">利用規約は<a href="#">こちら</a></p>
+    </div>
+
+<script>
+var id;  // blur時にintervalを停止するために使う
+var count;
+$("input").on("focus",function(){
+
+	var input = this;
+	(function(){
+				
+		id = setInterval(function(){
+			count = $(input).val().length;
+			if(count>0){
+				if(input.id != "pass"){
+					$(input).next().text(count);
+				}else{
+					if(count<4){
+						$(input).next().text("weak").css({"color":"red","right":"-3em"});
+					}else if(count<8){
+						$(input).next().text("normal").css({"color":"black","right":"-4em"});
+					}else{
+						$(input).next().text("good").css({"color":"limegreen","right":"-3em"});
+					}
+				}
+				
+			}else{
+				$(input).next().text("");
+			}
+			console.log("running");
+		},100);
+	})();
+});
+$("input").on("blur",function(){
+	clearInterval(id);
+});
+
+$("#myForm").submit(function(){
+	var errors = false;
+	$(".error").hide();
+	
+	if($("#first").val() == ""){
+		$("#first_error").show();
+		errors = true;
+	}
+	if($("#un").val() == ""){
+		$("#un_error").show();
+		errors = true;
+	}
+	if($("#pass").val() == ""){
+		$("#pass_error").show();
+		errors = true;
+	}
+	
+	//If there are errors, then show message
+	if(errors){
+		$("#warning").show("slow").delay(5000).slideUp("fast");
+		return false;
+	}
+	
+	//If no errors, show success msg
+	$(".success").fadeIn();
+	return true;
+	
+
+});
+
+$(".close").click(function(){
+	$(".success").fadeOut();
+});
+
+</script>
